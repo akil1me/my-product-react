@@ -1,0 +1,129 @@
+.header__humburger {
+  display: none;
+}
+
+.humburger__modal {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin: auto;
+  padding: 20px;
+  width: 95%;
+  height: 300px;
+  background-color: var(--cl-bg);
+  box-shadow: 0px 0px 100px 100px var(--cl-boxsh);
+  text-align: center;
+}
+
+.humburger__item {
+  margin-bottom: 15px;
+}
+
+.humburger__link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--cl-text);
+}
+
+.humburger__link :hover {
+  opacity: 0.7;
+}
+
+.humburger__more {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.humburger__link-sign {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--cl-logo);
+
+}
+
+.humburger__button-mode {
+  position: absolute;
+  z-index: 1;
+  top: -170px;
+  right: 0;
+}
+
+.humburger__button-mode :hover {
+  opacity: 0.7;
+}
+
+.humburger__img-x {
+  display: none;
+}
+
+.humburger__img path {
+  stroke: var(--cl-logo);
+}
+
+.humburger__img-x path {
+  fill: var(--cl-logo);
+}
+
+
+.humburger__input:checked~.humburger__modal {
+  display: block;
+}
+
+.humburger__input:checked~.humburger__modal~.humburger__label>.humburger__img {
+  display: none;
+}
+
+.humburger__input:checked~.humburger__modal~.humburger__label>.humburger__img-x {
+  display: block;
+}
+
+@media only screen and (max-width:1010px) {
+  .header__navbar {
+    display: none;
+  }
+
+  .header__humburger {
+    display: block;
+  }
+}
+
+@media only screen and (max-width:475px) {
+
+  .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    padding: 8px 0;
+    background-color: var(--cl-bg);
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.25);
+  }
+
+
+  .logo__img {
+    display: block;
+    width: 190px;
+    height: 42px;
+  }
+
+  .humburger__img {
+    width: 24px;
+    height: 28px;
+  }
+
+  .humburger__img-x {
+    width: 24px;
+    height: 28px;
+  }
+}

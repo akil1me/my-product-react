@@ -1,0 +1,58 @@
+.header {
+  padding: 19px 0;
+}
+
+.header__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo__img {
+  display: block;
+  width: 210px;
+  height: 52px;
+}
+
+.header__navbar {
+  display: flex;
+  align-items: center;
+}
+
+.header__link-sign {
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 7px;
+}
+
+.link-sign--in {
+  margin-left: 24px;
+  margin-right: 24px;
+  color: var(--cl-logo);
+  border: 1px solid #bcd0e5;
+}
+
+.link-sign--in:hover {
+  background-color: #173A56;
+  color: #ffffff;
+  border: 1px solid #173A56;
+}
+
+.link-sign--up {
+  margin-right: 24px;
+  background-color: #02897a;
+  color: #ffffff;
+  border: 1px solid #02897a;
+}
+
+.link-sign--up:hover {
+  background-color: var(--cl-bg);
+  border: 1px solid #02897a;
+}

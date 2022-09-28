@@ -1,0 +1,15 @@
+$cl-text: #22343d;
+
+:root {
+  --cl-text: #22343d;
+  --cl-bg: #ffffff;
+  --cl-logo: #173A56;
+  --cl-boxsh: rgba(184, 180, 180, 0.812);
+}
+
+.dark {
+  --cl-bg: #1F2E35;
+  --cl-text: #ffffff;
+  --cl-logo: #ffffff;
+  --cl-boxsh: #22343d;
+}
