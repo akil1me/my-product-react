@@ -41,7 +41,7 @@ export default function Humburger() {
         <label className="humburger__label" htmlFor="humburgerx">
 
 
-          <img className="humburger__img" src={humburgerImg} alt="humburger picture" width="28" height="31" />
+          <img className="humburger__img" src={humburgerImg} alt="humburger" width="28" height="31" />
           <img className="humburger__img-x" src={humburgerImgX} alt="humburger x" width="28" height="31" />
         </label>
       </div>
